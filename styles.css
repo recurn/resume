@@ -14,8 +14,8 @@ body {
   font-family: "Poppins";
   height: 11in;
   width: 8.5in;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  /* border-right: 1px solid black;
+  border-bottom: 1px solid black;*/
 }
 
 * {
@@ -26,8 +26,18 @@ body {
 }
 
 ul {
-  list-style-position: inside;
-  margin-left: 10px;
+    margin-left: 15px;
+}
+
+#content ul {
+  list-style-position: outside;
+  margin-left: 30px;
+}
+
+
+
+#content li {
+    font-size: 12px;
 }
 h2 {
   color: var(--ruby);
@@ -56,7 +66,7 @@ h3 {
 .flex-vert {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
   overflow: auto;
   justify-content: space-between;
 }
@@ -71,17 +81,41 @@ h3 {
 }
 #contact p span {
   padding: 0 10px;
+  align-items: center;
+}
+a {
+    color: white;
+}
+#contact img {
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    align-content: center;
 }
 .section-content {
   margin-left: 15px;
 }
 .section-content p {
     font-size: 13px;
-    color: grey;
+    color: rgb(75, 75, 75);
+    text-decoration: underline;
+    margin-left: 5px;
+}
+#interests p {
+    font-size: 11px;
 }
 #content {
-  padding: 15px;
-  height: 11in;
+
+  height: 10.99in;
+  padding: 0px 10px;
+  margin-left: 0;
+  padding-left: 15px;
+  /* border: 4px solid #225f7e;
+  border-left: none; */
+}
+#content > div:last-child {
+    padding-bottom: 10px;
 }
 
 #content h2 {
@@ -95,7 +129,7 @@ h3 {
   padding: 10px 0;
 }
 #sidebar div > *:not(h2) {
-  padding: 5px 5px;
+  padding: 3px 5px;
 }
 
 #sidebar h2 {
@@ -136,6 +170,11 @@ progress::-webkit-progress-value {
   flex: 3;
 }
 #tagline {
-    padding-top: 20px;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
