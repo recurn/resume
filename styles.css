@@ -1,3 +1,7 @@
+:root {
+  --primary: #2a324b;
+  --ruby: #da4167;
+}
 @media print {
   html {
     width: 8.5in;
@@ -10,15 +14,15 @@ body {
   font-family: "Poppins";
   height: 11in;
   width: 8.5in;
-  border: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /* filter: grayscale(100);  
-    great for checking contrast*/
+  /* filter: grayscale(100);  */
 }
 
 ul {
@@ -26,15 +30,21 @@ ul {
   margin-left: 10px;
 }
 h2 {
-  color: #3aa6dd;
+  color: var(--ruby);
+  /* text-align: center; */
   font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 90%;
+  width: 100%;
   border-bottom: 1px solid rgb(230, 230, 230);
+  border-top: 1px solid rgb(230, 230, 230);
+
 }
 h3 {
+    /* color: black; */
   font-size: 15px;
+}
+#name > * {
+  margin: 0 15px;
+  padding: 0 10px;
 }
 
 .flex-horz {
@@ -50,29 +60,82 @@ h3 {
   overflow: auto;
   justify-content: space-between;
 }
+#contact {
+  justify-content: space-evenly;
+  align-content: center;
+}
+#contact p {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+#contact p span {
+  padding: 0 10px;
+}
+.section-content {
+  margin-left: 15px;
+}
+.section-content p {
+    font-size: 13px;
+    color: grey;
+}
 #content {
-  padding: 10px;
+  padding: 15px;
   height: 11in;
+}
+
+#content h2 {
+  padding: 0;
 }
 #sidebar {
   height: 11in;
-  flex: 1.5;
-  background-color: #3aa6dd;
+  flex: 1.6;
+  background-color: #225f7e;
   color: white;
-  padding: 20px;
+  padding: 10px 0;
 }
+#sidebar div > *:not(h2) {
+  padding: 5px 5px;
+}
+
 #sidebar h2 {
   color: white;
+  background-color: var(--primary);
+  text-align: center;
+  border: none;
 }
+
 #sidebar,
 #content {
   display: flex;
   flex-direction: column;
 }
 
+#sidebar ul {
+  width: 240px;
+  list-style-type: none;
+  font-size: 14px;
+}
+.experience {
+  width: 100%;
+  align-self: center;
+  background-color: white;
+}
+progress::-webkit-progress-bar {
+  background-color: rgb(168, 168, 168);
+}
+progress::-webkit-progress-value {
+  background-color: white;
+}
+.xp-label {
+  text-align: right;
+  font-size: 11px;
+}
+
 #content {
   flex: 3;
 }
 #tagline {
-  text-align: left;
+    padding-top: 20px;
+    text-align: center;
 }
