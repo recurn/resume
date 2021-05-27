@@ -68,7 +68,7 @@ h3 {
   flex-direction: column;
   height: 90%;
   overflow: auto;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #contact {
   justify-content: space-evenly;
