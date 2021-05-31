@@ -21,9 +21,12 @@ body {
   font-family: "Poppins";
   height: 10.8in;
   width: 8.4in;
-  padding: 5px
   /* border-right: 1px solid black;
   border-bottom: 1px solid black;*/
+}
+
+body{
+  padding: 10px;
 }
 
 
@@ -51,7 +54,7 @@ h2 {
 h3 {
   /* color: black; */
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 #name > * {
   margin: 0 15px;
@@ -92,7 +95,7 @@ a {
   color: black;
 }
 #sidebar li {
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px 0;
 }
 #contact img {
@@ -131,7 +134,7 @@ a {
   padding: 0px 10px;
   margin-top: 5px;
   margin-left: 0;
-  padding-left: 15px;
+  /* padding-left: 10px; */
   /* border: 4px solid #225f7e;
   border-left: none; */
 }
@@ -147,12 +150,9 @@ a {
   flex: 1.7;
   /* background-color: #225f7e; */
   color: black;
-  margin-right: 18px;
+  margin-right: 1px;
   justify-content: space-between;
   /* border-right: 2px solid rgb(230, 230, 230); */
-}
-#content {
-  margin-right: 10px;
 }
 #projects {
   display: flex;
