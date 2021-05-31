@@ -26,7 +26,7 @@ body {
 }
 
 ul {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 #content ul {
@@ -34,10 +34,8 @@ ul {
   margin-left: 30px;
 }
 
-
-
 #content li {
-    font-size: 12px;
+  font-size: 12px;
 }
 h2 {
   color: var(--ruby);
@@ -46,17 +44,16 @@ h2 {
   width: 100%;
   border-bottom: 1px solid rgb(230, 230, 230);
   border-top: 1px solid rgb(230, 230, 230);
-
 }
 h3 {
-    /* color: black; */
+  /* color: black; */
   font-size: 15px;
 }
 #name > * {
   margin: 0 15px;
   padding: 0 10px;
 }
-#name p{
+#name p {
   font-size: 14px;
 }
 
@@ -87,40 +84,43 @@ h3 {
   align-items: center;
 }
 a {
-    color: white;
+  color: white;
 }
 #sidebar li {
-  font-size: 15px;
-  padding: 3px 0;
+  font-size: 16px;
+  padding: 5px 0;
 }
 #contact img {
-    height: 24px;
-    padding: 0;
-    margin: 0;
-    align-self: center;
-    align-content: center;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  align-content: center;
 }
 .section-content {
   margin-left: 15px;
 }
 .section-content p {
-    font-size: 13px;
-    color: rgb(75, 75, 75);
-    text-decoration: underline;
-    margin-left: 5px;
+  font-size: 13px;
+  color: rgb(75, 75, 75);
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+  margin-left: 5px;
 }
-#sidebar #interests{
+.section-content a {
+  color: black;
+}
+#sidebar #interests {
   display: flex;
 }
-#sidebar #interests li{
-    font-size: 12px;
+#sidebar #interests li {
+  font-size: 12px;
 }
 #sidebar #interests ul {
   width: 100px;
   padding: 0;
 }
 #content {
-
   height: 10.99in;
   padding: 0px 10px;
   margin-left: 0;
@@ -129,7 +129,7 @@ a {
   border-left: none; */
 }
 #content > div:last-child {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #content h2 {
@@ -137,7 +137,7 @@ a {
 }
 #sidebar {
   height: 11in;
-  flex: 1.6;
+  flex: 1.5;
   background-color: #225f7e;
   color: white;
   padding: 10px 0;
@@ -196,13 +196,14 @@ progress::-webkit-progress-value {
   flex: 3;
 }
 #tagline {
-    text-align: left;
-    font-size: 14px;
+  text-align: left;
+  font-size: 14px;
 }
 #tagline p {
   padding: none;
 }
 h1 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+  font-size: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
