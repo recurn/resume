@@ -15,7 +15,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
   </head>
 
   <body>
@@ -30,7 +31,7 @@
           </p>
           <div id="tagline"></div>
         </div>
-        <div class="flex-vert" id="contact">
+        <div id="contact">
           <h2>Personal Info</h2>
           <p>
             <span class="material-icons-outlined"> location_city </span>
@@ -57,37 +58,25 @@
             >
           </p>
 
-          <p>
+          <!-- <p>
             <span class="material-icons-outlined">
               <img src="linkedin-white.png" alt="linkedin icon" /> </span
             ><a href="https://www.linkedin.com/in/reidpat/" target="_blank"
               >linkedin.com/in/reidpat</a
             >
-          </p>
+          </p> -->
         </div>
         <div>
           <h2>Languages</h2>
           <ul>
             <li>
               <p>JavaScript</p>
-              <!-- <progress class="experience" value="90" max="100">
-                Excellent
-              </progress>
-              <p class="xp-label">Excellent</p> -->
             </li>
             <li>
               <p>HTML, CSS</p>
-              <!-- <progress class="experience" value="80" max="100">
-                Advanced
-              </progress>
-              <p class="xp-label">Advanced</p> -->
             </li>
             <li>
               <p>C#</p>
-              <!-- <progress class="experience" value="60" max="100">
-                Competent
-              </progress>
-              <p class="xp-label">Competent</p> -->
             </li>
           </ul>
         </div>
@@ -97,32 +86,13 @@
           <ul>
             <li>
               <p>Vue</p>
-              <!-- <progress class="experience" value="80" max="100">
-                Advanced
-              </progress>
-              <p class="xp-label">Advanced</p> -->
             </li>
             <li>Github</li>
-            <!-- <li>
-              <p>React</p>
-              <!-- <progress class="experience" value="60" max="100">
-                Competent
-              </progress>
-              <p class="xp-label">Competent</p>
-            </li> -->
             <li>
               <p>Google Cloud Platform (GCP)</p>
-              <!-- <progress class="experience" value="60" max="100">
-                Competent
-              </progress>
-              <p class="xp-label">Competent</p> -->
             </li>
             <li>
               <p>Unity</p>
-              <!-- <progress class="experience" value="60" max="100">
-                Competent
-              </progress>
-              <p class="xp-label">Competent</p> -->
             </li>
             <li>Unity - ML Agents</li>
           </ul>
@@ -160,6 +130,23 @@
       </div>
       <div id="content" class="flex-vert">
         <div>
+          <h2>Education</h2>
+          <div class="section-content">
+            <h3>Bachelor of Arts, Cognitive Systems</h3>
+            <div class="flex-horz">
+              <p>University of British Columbia (UBC)</p>
+              <p>Class of 2021</p>
+            </div>
+            <ul>
+              <li>Study of natural and artificial intelligence systems</li>
+              <li>
+                Multi-disciplinary degree involving psychology, computer
+                science, philosophy, linguistics
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
           <h2>Projects</h2>
           <div class="section-content">
             <div id="evolving-cyborgs">
@@ -171,11 +158,10 @@
                 >)
               </h3>
               <div class="flex-horz">
-                <p>Gamified Habit Tracker</p>
+                <p>Gamified Habit Tracker (solo) - <i>JS, HTML/CSS, Vue, GCP</i></p>
                 <p>2020 - 2021</p>
               </div>
               <ul>
-                <li>JavaScript, HTML/CSS, Vue, GCP</li>
                 <li>
                   Improved upon design of Habitica, aligning product with
                   psychology research on rewards to promote usability
@@ -195,11 +181,15 @@
                 >)
               </h3>
               <div class="flex-horz">
-                <p>Cogs 300 Final Project</p>
+                <p>Cogs 300 Final Project (Team Lead) - <i>C#, Unity</i></p>
                 <p>2020 - 2021</p>
               </div>
               <ul>
-                <li>C#, Unity</li>
+                <li>
+                  Developed game environment and API for students to use in
+                  final project when interacting with Unity Machine Learning
+                  Agents (C#, Unity)
+                </li>
                 <li>
                   Working online/asynchronously with prof and another TA,
                   created project for use in Cogs 300
@@ -217,36 +207,37 @@
             <div>
               <h3>Instructor, Codemaker Head</h3>
               <div class="flex-horz">
-                <p>Geering Up</p>
-                <p>2019, 2018, 2021 - Present</p>
+                <p>Geering Up Engineering Outreach - <i>JS, Vue, GCP</i></p>
+                <p>2019, 2018, 2021</p>
               </div>
               <ul>
+                <!-- <li>Used and taught JS, Python</li> -->
                 <li>
-                  Engaged in UI/UX design and developed custom software to
-                  assist in management and communication with students during
-                  online teaching
+                  Engaged in UI/UX design and developed custom software
+                  (JavaScript, Vue, GCP) to assist in communication with
+                  students during online teaching
                 </li>
                 <li>
                   Demonstrated creativity and initiative through implementation
-                  of a tracking and security system for over 200 laptops and
-                  other high-value technology
+                  of a web-based (JavaScript) tracking and security system for
+                  over 200 laptops and other high value technology
                 </li>
               </ul>
             </div>
             <div>
               <h3>Teaching Assistant (TA)</h3>
               <div class="flex-horz">
-                <p>UBC - Cognitive Systems 300</p>
+                <p>UBC - Cognitive Systems 300 - <i>C++, C#, Unity</i></p>
                 <p>2018 - 2021</p>
               </div>
               <div class="flex-horz">
-                <p>UBC - Computer Science 110</p>
+                <p>UBC - Computer Science 110 - <i>Racket (Lisp)</i></p>
                 <p>2016, 2017 - 2018</p>
               </div>
               <ul>
                 <li>
-                  Taught labs involving robotics in Arduino, machine learning
-                  agents in Unity
+                  Taught labs with robotics in Arduino, machine learning
+                  in Unity
                 </li>
                 <li>
                   Showcased technical communication and mentorship through
@@ -266,7 +257,7 @@
                 </li
               </ul> -->
             </div>
-            <div>
+            <!-- <div>
               <h3>Online Curriculum Designer & Software Developer</h3>
               <div class="flex-horz">
                 <p>UBC Cognitive Systems 300</p>
@@ -274,21 +265,16 @@
               </div>
               <ul>
                 <li>
-                  Created 10 brand-new labs and built software for final project
-                  in collaboration with another student and professor for Cogs
-                  300
-                </li>
-                <li>
-                  Developed game environment and API for students to use in
-                  final project when interacting with Unity Machine Learning
-                  Agents
+                  Created 10 brand-new labs and built software (C#) for final
+                  project in collaboration with another student and professor
+                  for Cogs 300
                 </li>
                 <li>
                   Worked collaboratively in an online environment to provide
                   working products and software within tight timelines
                 </li>
               </ul>
-            </div>
+            </div> -->
             <!-- <div>
               <h3>Barista, Food Prep, Cashier</h3>
               <p>D'lish Cafe | //TODO</p>
@@ -298,23 +284,7 @@
             </div> -->
           </div>
         </div>
-        <div>
-          <h2>Education</h2>
-          <div class="section-content">
-            <h3>Bachelor of Arts, Cognitive Systems</h3>
-            <div class="flex-horz">
-              <p>University of British Columbia (UBC)</p>
-              <p>Class of 2021</p>
-            </div>
-            <ul>
-              <li>Study of natural and artificial intelligence systems</li>
-              <li>
-                Multi-disciplinary degree involving psychology, computer
-                science, philosophy, linguistics
-              </li>
-            </ul>
-          </div>
-        </div>
+
         <div>
           <h2>Other Experience</h2>
           <div class="section-content">
